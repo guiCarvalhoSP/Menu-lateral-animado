@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu lateral animado</title>
+</head>
+
+<body>
+
+    <div class="navegacao">
+        <ul>
+            <li class="lista ativo">
+                <a href="#" onclick="alteraConteudo('home')">
+                    <span class="icone">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto">Home</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#" onclick="alteraConteudo('perfil')">
+                    <span class="icone">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto">Perfil</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#" onclick="alteraConteudo('mensagens')">
+                    <span class="icone">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="texto">Mensagens</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#" onclick="alteraConteudo('fotos')">
+                    <span class="icone">
+                        <ion-icon name="image-outline"></ion-icon>
+                    </span>
+                    <span class="texto">Fotos</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#" onclick="alteraConteudo('configuracoes')">
+                    <span class="icone">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="texto">Configurações</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </div>
+
+    <div class="conteudos">
+        <div id="home" class="conteudo ativo">
+                <h1>Home</h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, totam necessitatibus ipsam temporibus modi
+                molestias! Saepe, harum mollitia rem officia quos voluptas nam nemo minima deserunt hic laboriosam possimus
+                pariatur enim ullam dolore quam voluptates et adipisci dolor eum eveniet quaerat modi. Quia quam sed
+                obcaecati earum, aut consequatur vitae!
+
+        </div>
+
+        <div id="perfil" class="conteudo">
+            <h1>Perfil</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nemo possimus natus tempore minima deleniti earum. A, placeat nemo! Maxime reprehenderit nulla repellendus praesentium unde? Aliquid, minus. Soluta, tempora maxime.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe autem, officiis repellendus aliquid magnam praesentium corporis nostrum at fugit! Ab reiciendis, corporis provident sunt maxime aliquid laboriosam dolorum animi ea ratione delectus cumque sint similique ullam nobis tenetur voluptas inventore porro nulla perferendis. Perferendis consectetur nihil corporis non mollitia earum autem id veniam. Explicabo quaerat perferendis sed architecto porro.</p>
+        </div>
+
+        <div id="mensagens" class="conteudo">
+            <h1>Mensagens</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, totam necessitatibus ipsam temporibus modi
+            molestias! Saepe, harum mollitia rem officia quos voluptas nam nemo minima deserunt hic laboriosam possimus
+            pariatur enim ullam dolore quam voluptates et adipisci dolor eum eveniet quaerat modi. Quia quam sed
+            obcaecati earum, aut consequatur vitae! <br>
+            <h4>Lorem, ipsum dolor.</h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, beatae quis nemo ex perspiciatis voluptas illo. Porro ab iste pariatur similique distinctio adipisci earum quam deserunt necessitatibus. Ullam, nesciunt quaerat.
+        </div>
+
+        <div id="fotos" class="conteudo">
+            <h1>Fotos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci, odit dolorum esse quibusdam porro alias voluptatum vel, minus, officiis ducimus assumenda saepe atque quod. Cumque sunt iure totam veniam modi eius minus enim praesentium accusantium, quidem non alias eligendi voluptas error unde numquam aspernatur!</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptate quod nisi at cumque possimus, numquam quos iure, mollitia sequi hic id tempora voluptas voluptatibus modi iusto earum quis est facere esse! Dicta repudiandae quo odit quos possimus impedit dolore beatae quia eaque ipsam soluta amet, nostrum aut eos quis.</p>
+        </div>
+
+        <div id="configuracoes" class="conteudo">
+            <h1>Configurações</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, totam necessitatibus ipsam temporibus modi
+            molestias! Saepe, harum mollitia rem officia quos voluptas nam nemo minima deserunt hic laboriosam possimus
+            pariatur enim ullam dolore quam voluptates et adipisci dolor eum eveniet quaerat modi. Quia quam sed
+            obcaecati earum, aut consequatur vitae!
+
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus dolorem, fugiat est explicabo molestias possimus! Molestias et fugiat dicta.</p>
+            <br>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga error accusantium voluptatibus consequatur, labore autem iure esse atque, facilis quibusdam soluta enim nobis. Fuga itaque enim quod temporibus ratione fugiat.</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

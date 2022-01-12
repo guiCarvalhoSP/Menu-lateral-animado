@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,700,800');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --cor: #4a3cc9;
+    --branco: #fafafa;
+    --azul-escuro: #240e9e;
+    background-color: var(--branco);
+
+}
+
+.conteudos{
+    margin-left: 130px;
+    padding: 50px;
+}
+
+.conteudos .conteudo{
+    display: none;
+}
+
+.conteudos .conteudo.ativo{
+    display: block;
+}
+
+.navegacao{
+    display: flex;
+    position: fixed;
+    width: 130px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--cor);
+}
+
+.navegacao ul{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navegacao ul li {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin-bottom:20px;
+}
+
+.navegacao ul li a{
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navegacao ul li a .icone{
+    position: relative;
+    font-size: 2rem;
+    display: block;
+    line-height: 1.9em;
+    transition: 0.5s;
+}
+
+.navegacao ul li.ativo a .icone{
+    transform: translateX(63.5px);
+}
+
+.navegacao ul li a .texto{
+    color: var(--branco);
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.navegacao ul li.ativo a .texto{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.indicador{
+    position: absolute;
+    top: 47px;
+    left: 89px;
+    width: 80px;
+    height: 80px;
+    border: solid 4px var(--branco);
+    border-radius: 50%;
+    background-color: #240e9e;
+    transition: 0.5s;
+}
+
+.indicador::before{
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 22px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border-bottom-right-radius: 100%;
+    box-shadow: 7px 0px 0 0 var(--branco);
+}
+
+.indicador::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 22px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border-top-right-radius: 100%;
+    box-shadow: 9px 0px 0 0 var(--branco);
+}
+
+.navegacao ul li:nth-child(1).ativo ~ .indicador{
+    transform: translateY(calc(100px * 0));
+}
+
+.navegacao ul li:nth-child(2).ativo ~ .indicador{
+    transform: translateY(calc(100px * 1));
+}
+
+.navegacao ul li:nth-child(3).ativo ~ .indicador{
+    transform: translateY(calc(100px * 2));
+}
+
+.navegacao ul li:nth-child(4).ativo ~ .indicador{
+    transform: translateY(calc(100px * 3));
+}
+
+.navegacao ul li:nth-child(5).ativo ~ .indicador{
+    transform: translateY(calc(100px * 4));
+}
